@@ -22,7 +22,7 @@ form.onsubmit = (e) => {
     // console.log(formData); // Log the prepared data to the console
 
     // Sending data to the server using fetch
-    fetch('http://localhost:8000/submit', {
+    fetch('https://aadii-infotech-bakchend.onrender.com/submit', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json' // Specify content type
@@ -37,7 +37,7 @@ form.onsubmit = (e) => {
     })
     .then(data => {
         console.log('Success:', data);
-        alert('Your message has been sent successfully!'); // Alert on success
+        alert('We have got your message, We will contact you via Email,Thank you!'); // Alert on success
         inputs.forEach(input => {
             if (input.name) { // Make sure the input has a name attribute
                 input.value = " " // Assign the value to the formData object
